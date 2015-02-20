@@ -42,13 +42,22 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="72" width="314" height="93"/>
+                                    <rect key="frame" x="16" y="101" width="314" height="93"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSe-UT-pel">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="72" width="226" height="21"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="df7-0a-Ktt">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="250" y="173" width="80" height="80"/>
+                                    <rect key="frame" x="250" y="202" width="80" height="80"/>
                                 </variation>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W6X-4n-o7P">
@@ -56,7 +65,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="261" width="314" height="30"/>
+                                    <rect key="frame" x="16" y="290" width="314" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmn-Ec-oTd">
@@ -67,7 +76,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="223" width="226" height="30"/>
+                                    <rect key="frame" x="16" y="252" width="226" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendMailButtonPressed:" destination="ijx-Xh-OFP" eventType="touchUpInside" id="f3R-ap-GQ0"/>
@@ -78,7 +87,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="299" width="314" height="30"/>
+                                    <rect key="frame" x="16" y="328" width="314" height="30"/>
                                 </variation>
                             </textField>
                         </subviews>
@@ -86,6 +95,7 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="s7o-DA-80X"/>
+                                <exclude reference="fSe-UT-pel"/>
                                 <exclude reference="df7-0a-Ktt"/>
                                 <exclude reference="W6X-4n-o7P"/>
                                 <exclude reference="xmn-Ec-oTd"/>
@@ -95,6 +105,7 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="s7o-DA-80X"/>
+                                <include reference="fSe-UT-pel"/>
                                 <include reference="df7-0a-Ktt"/>
                                 <include reference="W6X-4n-o7P"/>
                                 <include reference="xmn-Ec-oTd"/>
@@ -107,6 +118,7 @@
                         <outlet property="enterNameTextField" destination="W6X-4n-o7P" id="Hlw-8n-Vsc"/>
                         <outlet property="mailButton" destination="xmn-Ec-oTd" id="E1D-YY-ntR"/>
                         <outlet property="messageLabel" destination="s7o-DA-80X" id="acm-XI-LVT"/>
+                        <outlet property="nameLabel" destination="fSe-UT-pel" id="j1c-vV-Y7N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qvR-Gi-cL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
